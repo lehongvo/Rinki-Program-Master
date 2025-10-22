@@ -1,0 +1,221 @@
+# ================================
+# Solana Program (Rust)
+# ================================
+
+# Rust build artifacts
+target/
+**/*.rs.bk
+*.pdb
+
+# Solana program artifacts
+/program/target/
+/programs/**/target/
+*.so
+*.dylib
+
+# Solana CLI
+.anchor/
+.DS_Store
+test-ledger/
+validator-log.txt
+
+# Anchor framework
+.anchor/
+.anchor-solana-dist/
+.anchor-solana-dist.bak/
+
+# Anchor build artifacts
+target/deploy/
+target/idl/
+target/types/
+
+# Anchor generated files (uncomment if you want to ignore auto-generated IDLs)
+# app/src/idl/
+# tests/idl/
+# target/idl/*.json
+
+# Anchor deployment artifacts
+.anchor/program-logs/
+deployments/*.json
+!deployments/README.md
+
+# Anchor test artifacts
+.anchor/test-ledger/
+test-ledger/
+validator-log*.txt
+ledger/
+
+# Anchor backup files
+Anchor.toml.bak
+Anchor.toml.backup
+
+# Cargo
+Cargo.lock
+**/Cargo.lock
+
+# ================================
+# Node.js / JavaScript / TypeScript
+# ================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# Testing
+coverage/
+*.lcov
+.nyc_output
+
+# Environment variables
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Anchor specific env
+.env.localnet
+.env.devnet
+.env.mainnet
+Anchor.env
+
+# Secrets and configs
+config.json
+secrets.json
+cluster-config.json
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# NestJS
+dist/
+.webpack/
+
+# TypeScript
+*.tsbuildinfo
+
+# ================================
+# IDEs and Editors
+# ================================
+
+# VSCode
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ================================
+# OS Files
+# ================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ================================
+# Logs and Databases
+# ================================
+
+logs/
+*.log
+*.sqlite
+*.db
+
+# ================================
+# Temporary and Cache Files
+# ================================
+
+tmp/
+temp/
+*.tmp
+*.cache
+.cache/
+
+# ================================
+# Solana Keypairs and Secrets
+# ================================
+
+# IMPORTANT: Never commit private keys!
+**/id.json
+**/*-keypair.json
+**/*.key
+**/*.pem
+wallet.json
+deploy-keypair.json
+authority-keypair.json
+payer-keypair.json
+
+# Anchor wallet
+.config/solana/id.json
+~/.config/solana/id.json
+
+# Program keypairs (các chương trình đã deploy)
+programs/**/*-keypair.json
+target/deploy/*-keypair.json
+
+# ================================
+# Package Manager Lock Files
+# ================================
+
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ================================
+# Miscellaneous
+# ================================
+
+# Backups
+*.bak
+*.backup
+*.old
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
